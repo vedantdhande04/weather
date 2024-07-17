@@ -1,0 +1,98 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("/images/background.jpg"); /* Adjust the path as per your directory structure */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white; /* Set default text color to white */
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: white; /* White text color */
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  transition: border-color 0.3s;
+  color: #333; /* Text color for input */
+  background-color: white; /* Input background color */
+}
+
+input[type="text"]:focus {
+  border-color: #000000;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: #000000;
+  color: white; /* White text color */
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #2e96ff;
+}
+
+.weather-info {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent white background for weather info */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #ffffff; /* Text color for weather info */
+}
+
+.weather-info img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 100px;
+}
+
+.weather-info h2 {
+  margin-top: 0;
+  color: white; /* White text color */
+}
+
+.weather-info p {
+  margin: 10px 0;
+}
+
+.error {
+  color: #d9534f;
+  font-weight: bold;
+}
